@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   padding: 0;
@@ -6,24 +5,21 @@
   box-sizing: border-box;
   font-family: 'Epilogue',
   sans-serif;
+  background-color: #fcfcfc;
 }
-
-
 
 body {
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
-
+/* --------------------------------------------------Flex / Main Desktop------------------------------------------------------ */
 article {
   font-size: 1.125rem;
   display: flex;
-  border: 2px solid salmon;
 }
 
 .main-content{
-  border: 1px solid black;
-  margin: 1em;
+  margin: 0 auto;
 }
 
 .intro,
@@ -33,18 +29,19 @@ article {
 }
 
 .desktopimg{
-  max-width: 65%;
-  min-width: 40%;
-  margin: 1.5em;
-  margin-left: 5em;
+ margin-top: 3.5em;
+ margin-left: 8em;
+ min-width:40% ;
+ width: 52%;
+
 }
 
 .buttonL{
   width: 25%;
   border-radius: 10px;
   padding: 1em;
-  background-color: transparent;
-  color: black;
+  background-color: #000;
+  color: #fff;
   font-weight: 900;
   border:0.5px solid #000;
 
@@ -53,57 +50,37 @@ article {
 .buttonL:hover,
 .buttonL:focus{
   cursor: pointer;
+  background-color: transparent;
+  color: #000;
 }
 
-
 .title {
-  border: 2px solid orange;
-  width: 75%;
-  height: 75vh;
-  margin: 4em;
+  width: 85%;
+  height: 65vh;
+  margin: 4.5em;
+  margin-top: 5.7em;
   line-height: 1;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
 }
 .top-text {
-  font-size: 4.3em;
-}
-
-.desktop-para{
-  border: 1px solid brown;
-  width: 85%;
+  font-size: 4.5em;
   font-weight: 600;
 }
 
-@media (min-width: 920px) {
-.imguy{
-  display: none;
+.desktop-para{
+  margin: 0 ;
+  width: 80%;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
-.mobileDisplay {
-  display: none;
-}
-
-  }
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p{
-
-  color:#686868 ;
-}
 
 header {
   position: sticky;
   top: 0px;
-  background-color: #fff;
+  background-color: #fcfcfc;
   width: 100%;
   z-index: 1000;
 }
@@ -116,28 +93,51 @@ section {
   overflow: hidden;
 }
 
-
-
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #fcfcfc;
 }
 
 .container {
   max-width: 120rem;
   padding: 0 2rem;
-  margin: 0 auto;
+  margin: 1em;
   display: flex;
   position: relative;
 }
+/* --------------------------------------------------Display Image mediaquery------------------------------------------------------ */
+@media (min-width: 920px) {
+  .imguy {
+    display: none;
+  }
 
+  .mobileDisplay {
+    display: none;
+  }
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #686868;
+  margin: 0.6em;
+}
+/* --------------------------------------------------Desktop Navbar------------------------------------------------------ */
 .logo-container {
   display: flex;
   align-items: center;
+  margin-right: 4em;
 }
 
 .nav-btn {
@@ -153,11 +153,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .logo {
-  color: #686868;
+  color: #fcfcfc;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -165,16 +164,21 @@ section {
   line-height: 3rem;
 }
 
-.logo span {
-  font-weight: 300;
-}
-
 .icon{
   width: 15px;
   float: left;
-  margin: 5px;
+  margin: 0 ;
   background-color: #fff;
+  margin-right: 1em;
+
 }
+
+.iconText{
+  padding: 1em;
+  }
+
+
+
 
 .btn {
   display: inline-block;
@@ -190,12 +194,16 @@ section {
 
 .btn.btn.transparent{
   border: none;
+  color: #686868;
 }
 
-.btn.solid,
+.btn.solid{
+  color: #686868;
+}
+
 .btn.transparent:hover {
-  background-color: #fff;
   color: #000;
+  font-weight: 600;
 }
 
 .btn.transparent,
@@ -209,6 +217,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 
 .nav-link {
   position: relative;
@@ -228,21 +237,34 @@ section {
 
 .nav-link>a>i {
   margin-left: .2rem;
+
 }
 
 .nav-link:hover>a {
   transform: scale(1.1);
+  color: #000;
 }
 
 .dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 10rem;
+  top: 110%;
+  right:10%;
+  width: 9.9em;
   transform: translateY(10px);
   opacity: 0;
   pointer-events: none;
   transition: .5s;
+  background-color: #fff;
+  padding: 0.8em;
+  border-radius: 15px;
+  box-shadow: 0px 0.5px 0.5px, 0 0 10px rgb(161, 156, 156), 0 0 2px #aea8a8;
+
+}
+
+.dropdown-first{
+    border-radius: 15px;
+    background-color: #fff;
+
 }
 
 .dropdown ul {
@@ -255,19 +277,25 @@ section {
   color: #686868;
   padding: .5rem 1rem;
   font-size: .9rem;
-  align-items: center;
-  justify-content: space-between;
+  justify-content:baseline;
   transition: .3s;
 }
 
 .dropdown-link:hover>a {
   background-color: #fff;
   color: #686868;
+
 }
 
-.dropdown-link:not(:nth-last-child(2)) {
-  border-bottom: 1px solid #efefef;
+.angle:hover .fa-angle-down,
+.angle .fa-angle-up {
+  display: none;
 }
+
+.angle:hover .fa-angle-up {
+  display: inline;
+}
+
 
 .dropdown-link i {
   transform: rotate(-90deg);
@@ -286,9 +314,7 @@ section {
   z-index: -1;
 }
 
-.dropdown-link:first-child:hover~.arrow {
-  background-color: #3498db;
-}
+
 
 .dropdown-link {
   position: relative;
@@ -313,6 +339,7 @@ section {
   opacity: 1;
   pointer-events: auto;
 }
+/* --------------------------------------------------Hamburger------------------------------------------------------ */
 
 .hamburger-menu-container {
   flex: 1;
@@ -394,7 +421,7 @@ section {
     transform: translateY(0px);
   }
 }
-
+/* --------------------------------------------------Media Query Mobile------------------------------------------------------ */
 @media (max-width: 920px) {
   .hamburger-menu-container {
     display: flex;
@@ -406,11 +433,11 @@ section {
 
   .nav-btn {
     position: fixed;
-    height: calc(100vh - 3rem);
-    top: 3rem;
+    height: calc(100vh - 0.2rem);
+    top: 4em;
     left: 9rem;
     width: 100%;
-    background-color: #69bde7;
+    background-color: #fcfcfc;;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -432,6 +459,7 @@ section {
   .nav-links {
     flex: initial;
     width: 100%;
+
   }
 
   .nav-links>ul {
@@ -447,11 +475,12 @@ section {
   .nav-link>a {
     line-height: 1;
     padding: 1.6rem 2rem;
+      background-color: #fcfcfc;
   }
 
   .nav-link:hover>a {
     transform: scale(1);
-    background-color: #50a9d6;
+    background-color: #fcfcfc;
   }
 
   .dropdown,
@@ -464,7 +493,7 @@ section {
     pointer-events: auto;
     width: 100%;
     padding: 0;
-    background-color: #3183ac;
+    background-color: #fcfcfc;
     display: none;
   }
 
@@ -479,8 +508,8 @@ section {
   }
 
   .dropdown-link>a {
-    background-color: transparent;
-    color: #fff;
+    background-color: #fcfcfc;
+    color: #686868;
     padding: 1.2rem 2rem;
     line-height: 1;
   }
@@ -497,28 +526,17 @@ section {
     border-bottom: none;
   }
 
-  .arrow {
-    z-index: 1;
-    background-color: #69bde7;
-    left: 10%;
-    transform: scale(1.1) rotate(45deg);
-    transition: .5s;
-  }
-
-  .nav-link:hover .arrow {
-    background-color: #50a9d6;
-  }
 
   .dropdown .dropdown .arrow {
     display: none;
   }
 
   .dropdown-link:hover>a {
-    background-color: #3a91bd;
+    background-color: #fff;
   }
 
   .dropdown-link:first-child:hover~.arrow {
-    background-color: #50a9d6;
+    background-color: #fff;
   }
 
   .nav-link>a>i {
@@ -539,17 +557,17 @@ section {
     justify-content: flex-start;
     opacity: 0;
     transform: translateY(15px);
+    background-color: #fff;
+    display: none;
   }
-
+/* --------------------------------------------------Mobile Content------------------------------------------------------ */
   article {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     background-image: #404040;
     text-align: center;
     flex-direction: column-reverse;
-
   }
-
 
   .imguy {
     height: 40vh;
@@ -562,11 +580,11 @@ section {
   }
 
   .mobileDisplay {
-    border: 2px solid orange;
-    width: 80%;
-    height: 40vh;
+    width: 100%;
+    height: 43vh;
     margin: 0 auto;
     line-height: 1.3;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -582,9 +600,11 @@ section {
 
   .btnl{
     margin: 0 auto;
-    width: 30%;
+    margin-bottom: 2em;
+    width: 35%;
+    padding: 1em;
     background-color: #000;
-    color: #fff;
+    color: #e2dede;
   }
 
 

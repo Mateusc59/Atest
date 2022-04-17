@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="style.css">
   <title>Responsive Navbar</title>
 </head>
-
+<!----------------------------------------------Navbar------------------------------------------------------------>
 <body>
   <header>
     <div class="container">
       <input type="checkbox" name="" id="check">
 
       <div class="logo-container">
-        <img class="logo"src="snap.png" alt="Navbar logo">
+        <img class="logo"src="images/snap.png" alt="Navbar logo">
       </div>
 
       <div class="nav-btn">
@@ -28,24 +28,30 @@
             <li class="nav-link" style="--i: .6s">
             </li>
             <li class="nav-link" style="--i: .85s">
-              <a href="#">Features<i class="fas fa-caret-down"></i></a>
-              <div class="dropdown">
+              <a  href="#" class="angle">Features
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown dropdown-first">
                 <ul>
                   <li class="dropdown-link">
-                    <a href="#"> <img class="icon" src="List1.jpg" alt="">Todo List</a>
+                    <a class="iconText-left" href="#"><img class="icon" src="images/List1.jpg" alt="Plan icon">Todo List<span></span></a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">Calendar</a>
+                    <a class="iconText" href="#"><img class="icon" src="images/calendar.jpg" alt="Plan icon">Calendar<span></span></a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">Reminders</i></a>
+                    <a class="iconText" href="#"><img class="icon" src="images/Bell.jpg" alt="Plan icon">Reminders<span class="spanrem"></span></a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a class="iconText-right" href="#"><img class="icon" src="images/Combined.jpg" alt="Plan icon">Planning<span></span></a>
+                  </li>
+<!----------------------------------------------Incase Second Dropdown------------------------------------------------------------>
+
                     <div class="dropdown second">
                       <ul>
-                        <li class="dropdown-link">
                           <div class="dropdown second">
                             <ul>
-                              <li class="dropdown-link">
-                              </li>
                               <div class="arrow"></div>
                             </ul>
                           </div>
@@ -54,29 +60,28 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-link">
-                    <a href="#">Planning</a>
-                  </li>
                   <div class="arrow"></div>
                 </ul>
               </div>
             </li>
             <li class="nav-link" style="--i: 1.1s">
-              <a href="#">Services<i class="fas fa-caret-down"></i></a>
+              <a href="#" class="angle">Company
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+              </a>
               <div class="dropdown">
                 <ul>
                   <li class="dropdown-link">
-                    <a href="#">History</a>
+                    <a class="iconText-left" href="#">History</a>
                   </li>
                   <li class="dropdown-link">
                     <a href="#">Our Team</a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">Blog</a>
+                    <a class="iconText-right" href="#">Blog</a>
                     <div class="dropdown second">
                       <ul>
                         <li class="dropdown-link">
-                          <a href="#">More<i class="fas fa-caret-down"></i></a>
                           <div class="dropdown second">
                             <ul>
                               <div class="arrow"></div>
@@ -92,6 +97,9 @@
               </div>
             </li>
             <li class="nav-link" style="--i: 1.35s">
+              <a href="#">Careers</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
               <a href="#">About</a>
             </li>
           </ul>
@@ -102,6 +110,7 @@
           <a href="#" class="btn solid">Register</a>
         </div>
       </div>
+<!----------------------------------------------Hamburger menu------------------------------------------------------------>
 
       <div class="hamburger-menu-container">
         <div class="hamburger-menu">
@@ -110,31 +119,37 @@
       </div>
     </div>
   </header>
+  <!----------------------------------------------Main content------------------------------------------------------------>
+
   <main>
     <section>
       <div class="overlay">
         <article>
           <div class="intro">
+<!----------------------------------------------Desktop------------------------------------------------------------>
+
             <div class="title">
-            <h1 class="top-text">Make
+            <h1 class="top-text">Make<br>
             remote work</h1>
             <p class="desktop-para">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
             <button class="buttonL"> Learn more </button>
-            <img src="Group.png" alt="">
+            <img src="images/Group.png" alt="Group associations">
             </div>
           </div>
 
           <div class="main-content">
-            <img class="desktopimg" src="GuyD.png">
+            <img class="desktopimg" src="images/GuyD.png">
             <div>
-              <img class="imguy" src="Guy-mobile.png">
+  <!----------------------------------------------Mobile------------------------------------------------------------>
+
+              <img class="imguy" src="images/Guy-mobile.png">
               <div class="mobileDisplay">
                 <h1 class="titleMobile">Make
                   remote work</h1>
                 <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity
                   soar.</p>
                   <button class="buttonL btnl"> Learn more </button>
-                  <img src="Group.png" alt="">
+                  <img src="/images/Group.png" alt="">
               </div>
             </div>
           </div>
