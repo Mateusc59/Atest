@@ -247,7 +247,7 @@ p {
 
 .dropdown {
   position: absolute;
-  top: 110%;
+  top: 105%;
   right:10%;
   width: 9.9em;
   transform: translateY(10px);
@@ -283,7 +283,7 @@ p {
 
 .dropdown-link:hover>a {
   background-color: #fff;
-  color: #686868;
+  color: #000;
 
 }
 
@@ -326,6 +326,7 @@ p {
   padding-left: .8rem;
   cursor: pointer;
   transform: translateX(10px);
+  display: none;
 }
 
 .dropdown.second .arrow {
